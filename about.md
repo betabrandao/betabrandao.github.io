@@ -7,6 +7,6 @@ permalink: /about/
 
 Meu nome é Roberta (mas gosto que me chamem de Beta) Sou uma experimentadora e amante de tecnologia. Formada em eletrônica, apaixonada por arduinos, tecnologias embarcadas e sempre em busca de tecnologias que visam produtividade. Aqui neste blog espero escrever um pouco de tudo sobre universo Cloud Linux e Windows Azure.
 
-Atualmente trabalho na [Lambda 3](https://www.lambda3.com.br) como *analista de infraestrutura* com orquestração de serviços Azure com Chef, além de pretar suporte para soluções internas para a equipe de desenvolvimento d empresa.
+Atualmente trabalho na [Lambda 3](https://www.lambda3.com.br) como *Analista de Infraestrutura* com orquestração de serviços Azure com Chef, além de prestar suporte para soluções internas para a equipe de desenvolvimento da empresa.
 
 Estudo neste momento (04-2018) para certificações em Azure Infrastructure.
