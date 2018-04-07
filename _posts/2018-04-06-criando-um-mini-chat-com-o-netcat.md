@@ -18,7 +18,7 @@ Sem rodeios, vamos para o code:
 ```bash
 $ nc -l -p 1025
 ```
-O comando `-l` é para habilitar o moodo listen (modo escuta) e o `-p` é a porta que será escutada. Lembrando que deve-se usar portas acima de 1024, pois estas são usadas somente pelo root.
+O comando `-l` é para habilitar o listen (modo escuta) e o `-p` é a porta que será escutada. Lembrando que deve-se usar portas acima de 1024, pois estas são usadas somente pelo root.
 
 2. No outro terminal "cliente", execute:
 
