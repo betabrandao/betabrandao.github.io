@@ -8,5 +8,6 @@ github_username:  betabrandao
 paginate: 5
 theme-dark: false
 plugins: [jekyll-paginate, kramdown]
-
+google_analytics:  UA-117116291-1
 markdown: kramdown
+permalink: /:title/
