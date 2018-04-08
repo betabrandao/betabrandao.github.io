@@ -5,6 +5,7 @@ date: 2018-04-06 03:03:09
 description: "Para conversar com sua mina no terminal ou trocar variáveis em VMs"
 tags: linux, terminal, netcat
 categories: linux
+comments: true
 twitter_text: "Criando um mini chat com NetCat"
 introduction: "Sem rodeios, vamos pro code"
 ---
