@@ -33,5 +33,10 @@ layout: default
   {% endif %}
   </footer>
 
+  {% if page.comments %}
+
+  {% include dqus.html %}
+  
+  {% endif %}
 
 </article>
