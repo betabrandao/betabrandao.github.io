@@ -12,7 +12,7 @@ comments: true
 # Cansei de vender miçangas, e agora?
 (Parte 1)
 
-Eu também cansei (rs)! Vinda da fotografia e da arte como a única forma de obtenção de *dinheiros*, fui obrigada *(por motivos óbvios de falta de grana pois viver de arte no Brasil é só pra rico)* a voltar para tecnologia. E daí fiz-me a pergunta: **Por onde eu começo?**
+Também cansei de vender miçangas (rs)! Vinda da fotografia e da arte como a única forma de obtenção de *dinheiros*, fui obrigada *(por motivos óbvios de falta de grana pois viver de arte no Brasil é só pra rico)* a voltar para tecnologia. E daí fiz-me a pergunta: **Por onde eu começo?**
  
  Bem, se você já tem algum conhecimento sobre tecnologia, eu sugiro começar a frequentar os eventos, [meetups](http://l.betab.io/meeetup) e encontros sobre tecnologia para saber qual está na moda no momento (É!!! Geralmente vai aparecer trampo pra quem manja das novidades). E se você não manjar nada nada, zero, nadica... **VÁ MESMO ASSIM**, mesmo se não não saber nada e não entender sobre o que é, apenas vá! Compareça e comece a anotar tudo que te parece interessante.
 
@@ -22,7 +22,7 @@ Eu também cansei (rs)! Vinda da fotografia e da arte como a única forma de obt
 
  Um exemplo bem prático que costumo dar sobre como funciona o fluxograma de entrega de software, em analogia:
 
- Pense num cenário em que você precisa ter um imóvel específico para você. Um prédio, por exemplo. Você contratou uma construtora X para iniciar seu projeto. A equipe **comercial** da construtora X entrou em contato e coletou informações básicas sobre o que você precisa e o que você vai investir. A construtora X irá desgnigar alguns **arquitetos** para transformar sua ídeia em documento visual, de acordo com sua necessidade. A partir daí, uma equipe de **engenheiros** são acionados para projetar toda **infraestrutura** necessária para compor seu imóvel. E Seu imóvel começa a ser construído pelos **mestres de obra**, desde a fundação até os detalhes estéticos.
+ Pense num cenário em que você precisa ter um imóvel específico para você. Um prédio, por exemplo. Você contratou uma construtora X para iniciar seu projeto. A equipe **comercial** da construtora X entrou em contato e coletou informações básicas sobre o que você precisa e o que você vai investir. A construtora X irá desgnigar alguns **arquitetos** para transformar sua ídeia em documento visual, de acordo com sua necessidade. A partir daí, uma equipe de **engenheiros** são acionados para projetar toda **infraestrutura** necessária para compor seu imóvel. E Seu imóvel começa a ser construído pelos **mestres de obra, desde a fundação até os detalhes estéticos.
 
  Assim é, a grosso modo, o funcionamento de uma empresa de software:
 
