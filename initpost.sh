@@ -113,14 +113,15 @@ echo "---"
 echo "layout: post"
 echo "title: \"${POST_TITLE}\""
 echo "date: ${CURRENT_DATE} ${TIME}"
-echo "image: '/assets/img/'"
+#echo "image: '/assets/img/'"
 echo "description:"
-echo "main-class:"
-echo "color:"
+#echo "main-class:"
+#echo "color:"
 echo "tags:"
 echo "categories:"
-echo "twitter_text:"
-echo "introduction:"
+#echo "twitter_text:"
+#echo "introduction:"
+echo "comments: true"
 echo "---"
 
 }
@@ -137,7 +138,6 @@ initpost_file() {
     fi
 
 }
-
 
 
 # ------------------------------------------------------------------------------

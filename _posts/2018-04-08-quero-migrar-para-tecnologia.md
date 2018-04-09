@@ -27,13 +27,9 @@ Eu também cansei (rs)! Vinda da fotografia e da arte como a única forma de obt
  Assim é, a grosso modo, o funcionamento de uma empresa de software:
 
  1. [comercial]: A equipe de vendas é o primeiro contato. É composto por especialistas que conhecem a fundo sobre todos os produtos e serviços da empresa. São responsáveis por captar novos clientes.
-
  2. [arquitetos]: Compostos por Designers de UX/UI, Consultorres de Negócio, e Desenvolvedores Front-End. São estas pessoas que irão definir "a roupagem" do software e como os usuários irão interagir.
-
  3. [engenheiros]: Composto por Consultores de [ALM](http://l.betab.io/almap178c0), [DevOps](http://l.betab.io/oqued6e376), [Agile](http://l.betab.io/desen747c6), [Scrum](http://l.betab.io/scrum1977e), [Data Science](http://l.betab.io/datscien342), [Inteligência Artificial](http://l.betab.io/intel1ea17), entre outros... São os profissionais que irão desenhar as métricas do projeto em um fluxograma de [regras de negócio] e como será conduzido o projeto, maximizando o tempo de entrega e mantendo a qualidade da equipe.
-
  4. [mestres de obra]: São os desenvolvedores e todo pessoal especializado na estruturação do software. Apesar da analogia até parecer que os desenvolvedores estão numa escala menor, na estruturação de uma empresa de software é diferente. Todo o centro de inteligência e execução de código, está no material humano da equipe de desenvolvimento, que é responsável pela entrega de um produto com código robusto e elegante. No projeto, há desenvolvedores que irão atuar no front-end (desenvolver o comportamento das telas) e no back-end (desenvolver as regras de negócio) ([Veja no link a definição](http://l.betab.io/front-back-end)).
- 
 5. Equipe financeira, Jurídica e de Recursos Humanos fazem parte do grupo de profissionais de back-office e que não necessariamente são especialistas de software.
 
 > **Mas... Pensei que iria rolar alguma dica sobre o que estudar...**
