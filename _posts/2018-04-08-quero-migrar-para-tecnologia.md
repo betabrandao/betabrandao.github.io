@@ -14,7 +14,7 @@ comments: true
 
 Também cansei de vender miçangas (rs)! Vinda da fotografia e da arte como a única forma de obtenção de *dinheiros*, fui obrigada *(por motivos óbvios de falta de grana pois viver de arte no Brasil é só pra rico)* a voltar para tecnologia. E daí fiz-me a pergunta: **Por onde eu começo?**
  
- Bem, se você já tem algum conhecimento sobre tecnologia, eu sugiro começar a frequentar os eventos, [meetups](http://l.betab.io/meeetup) e encontros sobre tecnologia para saber qual está na moda no momento (É!!! Geralmente vai aparecer trampo pra quem manja das novidades). E se você não manjar nada nada, zero, nadica... **VÁ MESMO ASSIM**, mesmo se não não saber nada e não entender sobre o que é, apenas vá! Compareça e comece a anotar tudo que te parece interessante.
+ Bem, se você já tem algum conhecimento sobre tecnologia, eu sugiro começar a frequentar os eventos, [meetups](http://l.betab.io/meeetup) e encontros sobre tecnologia para saber qual está na moda no momento (É!!! Geralmente vai aparecer trampo pra quem manja das novidades). E se você não manjar nada nada, zero, nadica... **VÁ MESMO ASSIM**, mesmo se não entender sobre o que é, apenas vá! Compareça e comece a anotar tudo que te parece interessante.
 
  Eu sempre gostei muito de [eletrônica](http://l.betab.io/porta29dd5), de mexer em [tecnologias embarcadas](http://l.betab.io/porta65236) e entender de como tudo é feito e como tudo funciona. Daí indentifiquei-me muito com a área de [infraestrutura](http://l.betab.io/infra8f453) e [IoT](http://l.betab.io/inter9ddcf) .
 
