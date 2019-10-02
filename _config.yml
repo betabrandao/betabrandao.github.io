@@ -1,10 +1,12 @@
-title: Beta Beta
-email: me@betab.io
-description: Tecnologia descomplicada, por Beta Brandão.
+title: Roberta Brandão
+email: blog@robertabrandao.com.br   
+description: Porque só aprendo de verdade escrevendo.
 baseurl: "" 
-url: "https://betab.io" 
+url: "https://www.robertabrandao.com.br"
+keybase_username: betabrandaorio
 twitter_username: betabrandaorio
 github_username:  betabrandao
+linkedin_username: betabrandao
 paginate: 5
 theme-dark: false
 plugins: [jekyll-paginate, kramdown]

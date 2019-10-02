@@ -46,7 +46,7 @@ POSTPATH="${BINPATH}/_posts"
 DIST_FOLDER="$POSTPATH"
 
 # Set your blog URL
-BLOG_URL="https://betab.io"
+BLOG_URL="https://www.robertabrandao.com.br"
 
 # Set your assets URL
 ASSETS_URL="assets/img/"
