@@ -17,3 +17,7 @@ permalink: /:title/
 #collection
 collections:
   - slides
+
+exclude:
+  - reveal.js
+  - slides/index.md
