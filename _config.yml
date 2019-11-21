@@ -19,5 +19,6 @@ collections:
   - slides
 
 exclude:
-  - reveal.js
+  - reveal.js/plugin/markdown/example.html
+  - reveal.js/plugin/markdown/example.md
   - slides/index.md
