@@ -13,3 +13,7 @@ plugins: [jekyll-paginate, kramdown]
 google_analytics:  UA-117116291-1
 markdown: kramdown
 permalink: /:title/
+
+#collection
+collections:
+  - slides
