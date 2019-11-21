@@ -21,4 +21,5 @@ collections:
 exclude:
   - reveal.js/plugin/markdown/example.html
   - reveal.js/plugin/markdown/example.md
+  - reveal.js/css/theme/README.md
   - slides/index.md
