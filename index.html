@@ -3,9 +3,8 @@ layout: default
 ---
 
 <div class="home">
-
-
-  {% for post in paginator.posts%}
+{% assign paginator_posts = paginator.posts | where: 'layout', 'post' %}
+  {% for post in paginator_posts %}
   <div class="post postContent">
     <div  class="postDate"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time>
     </div>
@@ -17,10 +16,9 @@ layout: default
     <a class='postLink' href="{{site.url}}{{site.baseurl}}{{post.url}}">{{post.title}}</a>
     </div>
     <div class="postExt">
-   {{ post.content | strip_html | truncate:200}}
+   {{ post.description}}
     </div>
   </div>
-
   {% endfor %}
   {% if paginator.total_pages > 1 %}
     <nav class="pagination">
@@ -43,18 +41,4 @@ layout: default
     {% endif %}
     </nav>
   {% endif %}
-  <!--<ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta-main">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link-main" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>-->
-
-
-
 </div>
