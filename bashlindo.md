@@ -5,48 +5,81 @@ permalink: /bashlindo/
 category: "bash"
 ---
 
- Meu gist: https://gist.robertabrandao.com.br
-```bash
-$ figlet "It's all about perception"
+## Mais Produtividade
+Update: 2022
+
+Quando tive oportunidade de trabalhar com ZSH no MacOs, curti muito a comodidade de trabalho com o [OMZ - Oh My Zsh](https://ohmyz.sh/) no Unix, Linuxlike e WSL. Recomendo.
+
+Explore os [Plugins](https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins) para autocomplete.
+
+Conheça o [ASDF-VM](https://asdf-vm.com/) Runtime, que gerencia várias versões de runtime no mesmo ambiente. Vale a pena.
+
+Meu setup no VIM 8.0
+
+```vim
+" Vim-Plug
+call plug#begin()
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'majutsushi/tagbar'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'  "to highlight files in nerdtree
+Plug 'townk/vim-autoclose'
+Plug 'vim-syntastic/syntastic'
+Plug 'joereynolds/vim-minisnip'
+Plug 'ryanoasis/vim-devicons'
+
+Plug 'pangloss/vim-javascript'    " JavaScript support
+Plug 'leafgarland/typescript-vim' " TypeScript syntax
+Plug 'maxmellon/vim-jsx-pretty'   " JS and JSX syntax
+Plug 'jparise/vim-graphql'        " GraphQL syntax
+call plug#end()
+
+set laststatus=2
+set showtabline=2
+set encoding=UTF-8
+
+" enable syntax highlighting
+syntax enable
+colo darkblue
+
+set number
+set ts=4
+set autoindent
+set expandtab
+set shiftwidth=4
+set cursorline
+set showmatch
+let python_highlight_all = 1
+
+" NerdTree autopen
+autocmd vimenter * NERDTree
+" NerdTree closeall
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+let g:NERDTreeDirArrowExpandable = '▸'
+let g:NERDTreeDirArrowCollapsible = '▾'
+let NERDTreeShowHidden=1
+
+" Syntastic Config
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_php_checkers = ['phpcs']
+
+"g:syntastic_javascript_checkers = ['<checker-name>']
+
+" Use Python test
+autocmd Filetype python nnoremap <F9> :!claear;python3 "%"<cr>
+
+" Use PHP test
+autocmd Filetype php nnoremap <F9> :!clear;php "%"<CR>
+
+"Use NodeJS test
+autocmd Filetype javascript nnoremap <F9> :!clear;node "%" <CR>
+let g:pymode_rope = 0 " " "" " " " " " " " "" } "
 ```
 
-### [Git Alias](https://gist.robertabrandao.com.br/49557a6a2e0acde683dc3d3b908ea341)
-Pra deixar o git mais lindo no bash (**e sim, eu comi o gost-script**) inclua no arquivo .bashrc no linux (ou WSL, ou Git Terminal) em seu diretório raíz as linhas abaixo:
-
-No link do Gist do GitHub tem a versão completona com [comandos lindo](https://gist.robertabrandao.com.br/49557a6a2e0acde683dc3d3b908ea341),e aqui deixo os que mais uso:
-
-```bash
-# Aliases
-alias gcl='git clone'
-alias ga='git add'
-alias grm='git rm'
-alias gall='git add ./'
-alias gfv='git fetch --all --prune --verbose'
-alias gus='git reset HEAD'
-alias gm="git merge"
-alias g='git'
-alias gs='git status'
-alias gl='git pull'
-alias gpr='git pull --rebase'
-alias gpp='git pull && git push'
-alias gup='git fetch && git rebase'
-alias gp='git push'
-alias gcm='git commit -v -m'
-alias gbm='git branch -m'
-alias gbD='git branch -D'
-alias gcom='git checkout master'
-alias gcod='git checkout develop'
-alias gcb='git checkout -b'
-alias gdel='git branch -D'
-alias gg="git log --graph --pretty=format:'%C(bold)%h%Creset%C(magenta)%d%Creset %s %C(yellow)<%an> %C(cyan)(%cr)%Creset' --abbrev-commit --date=relative"
-alias ggs="gg --stat"
-alias gstb="git stash branch"
-alias gstd="git stash drop"
-alias gstl="git stash list"
-alias gstp="git stash pop"
-alias gh='cd "$(git rev-parse --show-toplevel)"'
-alias gu='git ls-files . --exclude-standard --others'
-```
-
-
-### ~~Onde eu pego meus livros que não tenho grana pra pagar~~: [Zlibrary Book](https://b-ok.cc/)

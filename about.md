@@ -5,6 +5,10 @@ permalink: /about/
 ---
 
 
-Meu nome é Roberta Brandão (ou simplesmente Beta). Curto bastante tecnolgia e este blog uso para compartilhar um pouco das minhas experiências boas e também as ruins.
+Meu nome é Roberta Brandão (ou simplesmente Beta). Este espaço é um caderno público meu. A proposta minha é colocar assuntos que necessito aprender e algumas respostas no meu processo de descoberta que pode ajudar alguém.
 
-Minhas redes sociais atuais são: Twitter e Linkedin (link no rodapé)
+Trabalho como DevOps e desenvolvedora.
+
+Atualmente estudando engenharia elétrica.
+
+Minhas rede é o Linkedin (link no rodapé)
