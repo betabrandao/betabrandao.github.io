@@ -1,0 +1,1 @@
+../themes/LoveIt/archetypes/default.md

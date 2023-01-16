@@ -7,7 +7,7 @@ theme = "LoveIt"
 title = "Roberta Brandão"
 
 # language code ["en", "zh-CN", "fr", "pl", ...]
-languageCode = "pt-br"
+languageCode = "pt"
 # language name ["English", "简体中文", "Français", "Polski", ...]
 languageName = "Português Br"
 
@@ -53,3 +53,29 @@ languageName = "Português Br"
   [markup.highlight]
     # false is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
     noClasses = false
+
+[params]
+  # site default theme ["auto", "light", "dark"]
+  defaultTheme = "auto"
+  # public git repo url only then enableGitInfo is true
+  gitRepo = ""
+  # LoveIt NEW | 0.1.1 which hash function used for SRI, when empty, no SRI is used
+  # ["sha256", "sha384", "sha512", "md5"]
+  fingerprint = ""
+  # LoveIt NEW | 0.2.0 date format
+  dateFormat = "2006-01-02"
+  # website title for Open Graph and Twitter Cards
+  title = "Beta Brandão"
+  # website description for RSS, SEO, Open Graph and Twitter Cards
+  description = "Algumas anotações para não perder de vista"
+  # website images for Open Graph and Twitter Cards
+  #images = ["/logo.png"]
+ 
+# List (category or tag) page config
+  [params.list]
+    # special amount of posts in each list page
+    paginate = 20
+    # date format (month and day)
+    dateFormat = "01-02"
+    # amount of RSS pages
+    rss = 10
