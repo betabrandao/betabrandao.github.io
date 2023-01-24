@@ -1,0 +1,81 @@
+baseURL = "https://robertabrandao.com.br/"
+
+# Change the default theme to be use when building the site with Hugo
+theme = "LoveIt"
+
+# website title
+title = "Roberta Brandão"
+
+# language code ["en", "zh-CN", "fr", "pl", ...]
+languageCode = "pt"
+# language name ["English", "简体中文", "Français", "Polski", ...]
+languageName = "Português Br"
+
+# Author config
+[author]
+  name = "Beta Brandão"
+  email = "roberta@robertabrandao.com.br"
+  link = ""
+
+# Menu config
+[menu]
+  [[menu.main]]
+    weight = 1
+    identifier = "posts"
+    # you can add extra information before the name (HTML format is supported), such as icons
+    pre = ""
+    # you can add extra information after the name (HTML format is supported), such as icons
+    post = ""
+    name = "Posts"
+    url = "/posts/"
+    # title will be shown when you hover on this menu link
+    title = ""
+  [[menu.main]]
+    weight = 2
+    identifier = "tags"
+    pre = ""
+    post = ""
+    name = "Tags"
+    url = "/tags/"
+    title = ""
+  [[menu.main]]
+    weight = 3
+    identifier = "categories"
+    pre = ""
+    post = ""
+    name = "Categories"
+    url = "/categories/"
+    title = ""
+
+# Markup related configuration in Hugo
+[markup]
+  # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
+  [markup.highlight]
+    # false is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
+    noClasses = false
+
+[params]
+  # site default theme ["auto", "light", "dark"]
+  defaultTheme = "auto"
+  # public git repo url only then enableGitInfo is true
+  gitRepo = ""
+  # LoveIt NEW | 0.1.1 which hash function used for SRI, when empty, no SRI is used
+  # ["sha256", "sha384", "sha512", "md5"]
+  fingerprint = ""
+  # LoveIt NEW | 0.2.0 date format
+  dateFormat = "2006-01-02"
+  # website title for Open Graph and Twitter Cards
+  title = "Beta Brandão"
+  # website description for RSS, SEO, Open Graph and Twitter Cards
+  description = "Algumas anotações para não perder de vista"
+  # website images for Open Graph and Twitter Cards
+  #images = ["/logo.png"]
+ 
+# List (category or tag) page config
+  [params.list]
+    # special amount of posts in each list page
+    paginate = 20
+    # date format (month and day)
+    dateFormat = "01-02"
+    # amount of RSS pages
+    rss = 10
