@@ -1,7 +1,7 @@
 ---
 title: "Configurando a APN no roteador chinês usb 4G/LTE"
 date: 2023-01-15T21:11:12-03:00
-draft: true
+draft: false
 categories: ["personal"]
 ---
 
