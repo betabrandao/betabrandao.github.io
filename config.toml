@@ -79,3 +79,37 @@ languageName = "Português Br"
     dateFormat = "01-02"
     # amount of RSS pages
     rss = 10
+
+  # Home page config
+  [params.home]
+    # amount of RSS pages
+    rss = 10
+    # Home page profile
+    [params.home.profile]
+      enable = true
+      # Gravatar Email for preferred avatar in home page
+      gravatarEmail = ""
+      # URL of avatar shown in home page
+      avatarURL = "/images/avatar.png"
+      # title shown in home page (HTML format is supported)
+      title = ""
+      # subtitle shown in home page (HTML format is supported)
+      subtitle = "Honestidade em pequenas coisas não é uma coisa pequena."
+      # whether to use typeit animation for subtitle
+      typeit = true
+      # whether to show social links
+      social = true
+      # disclaimer (HTML format is supported)
+      disclaimer = ""
+    # Home page posts
+    [params.home.posts]
+      enable = true
+      # special amount of posts in each home posts page
+      paginate = 6
+  
+  # Social config in home page
+  [params.social]
+    GitHub = "https://github.com/betabrandao"
+    Linkedin = "https://www.linkedin.com/in/betabrandao"
+    Instagram = "https://instagram.com/betanaroca"
+    Gitlab = "https://gitlab.com/betabrandao"
