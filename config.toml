@@ -109,7 +109,7 @@ languageName = "Português Br"
   
   # Social config in home page
   [params.social]
-    GitHub = "https://github.com/betabrandao"
-    Linkedin = "https://www.linkedin.com/in/betabrandao"
-    Instagram = "https://instagram.com/betanaroca"
-    Gitlab = "https://gitlab.com/betabrandao"
+    GitHub = "betabrandao"
+    Linkedin = "betabrandao"
+    Instagram = "betanaroca"
+    Gitlab = "betabrandao"
