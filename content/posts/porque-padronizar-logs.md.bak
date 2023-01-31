@@ -29,21 +29,21 @@ E como estamos falando desta pilha de informações que estão sendo acumuladas 
 
 ### Quem consome esta informação?
 
-Muitas destas mensagens são geralmente reaproveitadas para identificar falhas e comportamentos que existem no desenvolvimento de software, sendo acessada pela própria pessoa desenvolvedora para debugar o código. Mas como estamos lidando muitas vezes com tecnologias em nuvem com alta complexidade de serviços acoplados em nosso aplicativo (**Cloud**), geralmente são usados agregadores de logs para facilitar a gestão e velocidade de como os logs são aproveitados, como por exemplo o ElasticSearch ou Datadog.
+Muitas destas mensagens são geralmente reaproveitadas para identificar falhas e comportamentos que existem no desenvolvimento de software, sendo acessada pela própria pessoa desenvolvedora para debugar o código. Mas como estamos lidando muitas vezes com tecnologias em nuvem com alta complexidade de serivços acoplados em nosso aplicativo (**Cloud**), geralmente são usados agregadores de logs para facilitar a gestão e velocidade de como os logs são aproveitados, como por exemplo o ElasticSearch ou Datadog.
 
 Por isso é muito importante entender sobre o log e tipos de erros e formatos, dentro de uma boa prática de escrita de código (Isso fica para um outro artigo), qual inclusive indico a leitura do capítulo 7 do livro [*Clean Code* de Robert C. Martin](https://www.amazon.com.br/C%C3%B3digo-limpo-Robert-C-Martin/dp/8576082675) 
 
 ### Porque Json?
 
-O [Json](https://www.json.org/json-pt.html) é um formato semiestruturado de dados tipo `"CHAVE": "VALOR"` que é usado comumente em diversas aplicações para se comunicarem entre si via [API](https://aws.amazon.com/pt/what-is/api/). 
+O [Json](https://www.json.org/json-pt.html) é um fomato semi-estruturado de dados tipo `"CHAVE": "VALOR"` que é usado comumente em diversas aplicações para se comunicarem entre si via [API](https://aws.amazon.com/pt/what-is/api/). 
 
 E em grande maioria, quando estamos em projetos no mercado que trata dados como requisito de negócio, muito importante deixar o formato de saída de log da aplicação com um bom acoplamento com as diversas ferramentas de agregação de logs existentes no mercado.
 
 ### Estruturando log como json
 
-Bem, como expliquei anteriormente, o log é um conjunto de mensagens agrupados em um arquivo de texto. E pensando nisso, precisa-se atentar de como o log em Json irá ser agrupados no arquivo de texto. Vamos primeiro para o exemplo de uma estrutura de Log em texto:
+Bem, como expliquei anteriormente, o log é um conjunto de mensagens agrupados em um arquivo de texto. E pensando nisso, precisa-se atentar de como o log em json irá ser agrupados no arquivo de texto. Vamos primeiro para o exemplo de uma estrutura de log em texto:
 
-Exemplo do arquivo de Log encontrado em `/var/log/cups/access_log` em formato texto:
+Exemplo do arquivo de log encontrado em `/var/log/cups/access_log` em formato texto:
 
 {{< highlight text >}}
 localhost - - [30/Jan/2023:10:33:05 -0300] "POST / HTTP/1.1" 200 349 Create-Printer-Subscriptions successful-ok
@@ -51,9 +51,9 @@ localhost - - [30/Jan/2023:10:33:05 -0300] "POST / HTTP/1.1" 200 176 Create-Prin
 {{< /highlight >}}
 
 
-No exemplo acima, cada mensagem do serviço CUPS foi gravada em uma linha só, então nas atuais ferramentas de Observabilidade do mercado, como o Datadog, NewRellic ou o OpenSearch, e cada linha do arquivo `acces_log` é entendida como 1 mensagem de Log. 
+No exemplo acima, cada mensagem do serviço CUPS foi gravada em uma linha só, então nas atuais ferramentas de Observabilidade do mercado, como o Datadog, NewRellic ou o OpenSearch, e cada linha do arquivo `acces_log` é entendida como 1 mensagem de log. 
 
-Agora um exemplo de duas mensagens de Log em Json gravados em **18 linhas**, ou seja, 18 mensagens de Log:
+Agora um exemplo de duas mensagens de log em Json gravados em **18 linhas**, ou seja, 18 mensagens de log:
 
 {{< highlight json>}}
  {
@@ -76,13 +76,13 @@ Agora um exemplo de duas mensagens de Log em Json gravados em **18 linhas**, ou 
 }
 {{< /highlight>}}
 
- O exemplo acima foi gravado no arquivo de Log da mesma forma que uma API recebe a informação. Porém para os serviços de agregação de Log, poderemos ter 18 mensagens quebradas não são aproveitadas. O grande motivo disso é que a maioria dos agentes dos serviços de mercado de agregação de Log fica lendo o arquivo de Log constantemente e entende cada linha do arquivo como uma mensagem de Log somente.Mas temos um truque para resolver isso: compactar o Json para caber em uma linha só. Com isso os serviços de agregação de Log conseguem entender que recebeu um Json!
+ O exemplo acima foi gravado no arquivo de log da mesma forma que uma API recebe a informação. Porém para os serviços de agregação de log, poderemos ter 18 mensagens quebradas não são aproveitadas. O grande motivo disso é que a maioria dos agentes dos serviços de mercado de agregação de log fica lendo o arquivo de log constantemente e entende cada linha do arquivo como uma mensagem de log somente.Mas temos um truque para reslver isso: compactar o json para caber em uma linha só. Com isso os serviços de agregação de log conseguem entender que recebeu um json!
 
-No exemplo abaixo, é o formato ideal, e os agregadores de mercado entenderão como duas mensagens de Log.
+No exemplo abaixo, é o formato ideal, e os agregadores de mercado entenderão como duas mensagens de log.
 {{< highlight json>}}
  {"eventTime": "08:51:08","source":{"file": "DataLogger","line": 27, "eventType": "GPS update"}
  {"eventTime": "10:00:03","source":{"file": "DataLogger","line": 36, "eventType": "GPS Offline"}
 {{< /highlight>}}
 
 
-Na parte 2, explicarei como aplicar boas práticas na estrutura de Logs.
+Na parte 2, vou escrever como podemos padronizar logs.
