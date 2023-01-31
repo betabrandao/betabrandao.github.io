@@ -76,7 +76,7 @@ Agora um exemplo de duas mensagens de Log em Json gravados em **18 linhas**, ou 
 }
 {{< /highlight>}}
 
- O exemplo acima foi gravado no arquivo de Log da mesma forma que uma API recebe a informação. Porém para os serviços de agregação de Log, poderemos ter 18 mensagens quebradas não são aproveitadas. O grande motivo disso é que a maioria dos agentes dos serviços de mercado de agregação de Log fica lendo o arquivo de Log constantemente e entende cada linha do arquivo como uma mensagem de Log somente.Mas temos um truque para resolver isso: compactar o Json para caber em uma linha só. Com isso os serviços de agregação de Log conseguem entender que recebeu um Json!
+ O exemplo acima foi gravado no arquivo de Log da mesma forma que uma API recebe a informação. Porém para os serviços de agregação de Log, poderemos ter 18 mensagens quebradas que não são aproveitadas. O grande motivo disso é que a maioria dos agentes dos serviços de mercado de agregação de Log fica lendo o arquivo de Log constantemente e entende cada linha do arquivo como uma mensagem de Log somente.Mas temos um truque para resolver isso: compactar o Json para caber em uma linha só. Com isso os serviços de agregação de Log conseguem entender que recebeu um Json!
 
 No exemplo abaixo, é o formato ideal, e os agregadores de mercado entenderão como duas mensagens de Log.
 {{< highlight json>}}
