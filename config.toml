@@ -134,3 +134,9 @@ languageName = "Português Br"
     Linkedin = "betabrandao"
     Instagram = "betanaroca"
     Gitlab = "betabrandao"
+  [params.page.comment.gitalk]
+    enable = true
+    owner = "betabrandao"
+    repo = "betabrandao.github.io"
+    clientId = "d6eea39f33fc749ce033"
+    clientSecret = "2f3c3e3a135b7ffa35ce0ab4566d52b19a943b0e"
