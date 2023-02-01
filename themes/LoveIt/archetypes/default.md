@@ -22,7 +22,6 @@ featuredImagePreview: ""
 #lightgallery: true
 #ruby: true
 #fraction: true
-fontawesome: true
 linkToMarkdown: true
 #rssFullText: false
 
@@ -43,20 +42,7 @@ share:
 comment:
   enable: true
   # ...
-library:
-  css:
-    # someCSS = "some.css"
-    # located in "assets/"
-    # Or
-    # someCSS = "https://cdn.example.com/some.css"
-  js:
-    # someJS = "some.js"
-    # located in "assets/"
-    # Or
-    # someJS = "https://cdn.example.com/some.js"
-seo:
-  images: []
-  # ...
+
 ---
 
 <!--more-->
