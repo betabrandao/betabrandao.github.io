@@ -15,6 +15,10 @@ categories: [devops, boas práticas]
 
 featuredImage: "/images/logs.jpeg"
 featuredImagePreview: "/images/logs.jpeg"
+
+comment:
+  enable: true
+
 ---
 
 Já um tempo queria escrever sobre logs, mas sentia um pouco de dificuldade de criar um boa razão para defender uma escrita coerente para o tema. Eis que encontrei: Dados! <!--more--> Dados é considerado o novo petróleo e então precisamos conversar um pouco mais sobre ele.
