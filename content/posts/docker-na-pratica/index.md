@@ -1,6 +1,6 @@
 ---
-title: "Fundamentos de Containers, Docker e LXC: Desvendando a Virtualização Leve"
-subtitle: "Conceitos básicos de como começar com containers"
+title: "Containers e Docker: Desvendando a Virtualização de um app em NodeJS"
+subtitle: "Conceitos básicos de como começar com containers na prática"
 date: 2023-08-28T19:53:26Z
 lastmod: 2023-08-28T19:53:26Z
 draft: false
