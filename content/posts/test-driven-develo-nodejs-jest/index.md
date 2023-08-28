@@ -4,14 +4,14 @@ subtitle: ""
 date: 2023-08-22T22:18:19-03:00
 lastmod: 2023-08-22T22:18:19-03:00
 draft: false
-author: ""
+author: "Beta brandao"
 authorLink: ""
 description: ""
 license: ""
 images: []
 
-tags: []
-categories: []
+tags: [apps, nodejs, javascript]
+categories: [desenvolvimento]
 
 featuredImage: "image.jpg"
 featuredImagePreview: "image.jpg"
