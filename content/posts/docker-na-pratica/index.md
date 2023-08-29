@@ -143,9 +143,9 @@ Agora você está dentro do **contêiner LXC**, que oferece um ambiente isolado 
 ## Docker: Revolucionando a Implantação de Aplicativos
 O Docker é uma plataforma líder no mundo dos containers. Ele oferece uma maneira eficiente de criar, implantar e gerenciar containers. O Docker utiliza recursos do sistema operacional subjacente, mas isola completamente os processos em execução. Isso significa que você pode executar várias aplicações em diferentes containers, todos compartilhando o mesmo kernel do sistema operacional. Aqui está um exemplo básico de como criar um contêiner Docker a partir de uma imagem e executar um servidor web nele:
 
-### A origem do nome Docker
-
-O nome "Docker" tem suas raízes na indústria de transporte e logística. Um "docker" é um termo que se refere a um trabalhador que carrega e descarrega cargas de contêineres em portos ou instalações de transporte. Esse termo foi adotado pela tecnologia de contêineres como uma analogia, refletindo o conceito de empacotar e transportar aplicativos juntamente com todas as suas dependências.
+{{< admonition type=tip title="A origem do nome Docker" open=true >}}
+O nome **Docker** tem suas raízes na indústria de transporte e logística. Um **docker** é um termo que se refere a um trabalhador que carrega e descarrega cargas de contêineres em portos ou instalações de transporte. Esse termo foi adotado pela tecnologia de contêineres como uma analogia, refletindo o conceito de empacotar e transportar aplicativos juntamente com todas as suas dependências.
+{{< /admonition >}}
 
 #### Instale o Docker
 Certifique-se de ter o Docker instalado em sua máquina. Você pode baixá-lo no site oficial do Docker: https://www.docker.com/
@@ -227,9 +227,25 @@ Crie uma estrutura de diretórios para o projeto:
 ```text
 my-nodejs-app/
 │── docker-compose.yml
+│── Dockerfile
 │── app/
 │     ├── package.json
 │     ├── server.js
+```
+
+### Crie o Arquivo do Dockerfile
+Crie um arquivo `Dockerfile` na pasta raiz do projeto e adicione o seguinte conteúdo:
+
+```Dockerfile
+FROM node:10-alpine
+RUN mkdir -p /home/node/app/node_modules && chown -R node:node /home/node/app
+WORKDIR /home/node/app
+COPY package*.json ./
+USER node
+RUN npm install
+COPY --chown=node:node . .
+EXPOSE 8080
+CMD [ "node", "server.js" ]
 ```
 
 ### Crie o Arquivo do Docker Compose
@@ -238,10 +254,17 @@ Crie um arquivo `docker-compose.yml` na pasta raiz do projeto e adicione o segui
 ```yaml
 version: '3'
 services:
-  web:
-    build: ./app
+  nodejs:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: nodejs
+    container_name: nodejs
     ports:
       - "3000:3000"
+    volumes:
+      - ./app:/home/node/app
+      - ./node_modules:/home/node/app/node_modules
     depends_on:
       - db
   db:
