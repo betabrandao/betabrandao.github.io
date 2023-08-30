@@ -134,7 +134,8 @@ Isso criará um contêiner LXC com o Ubuntu 18.04 (Bionic Beaver).
 sudo lxc-start -n meu-container
 sudo lxc-attach -n meu-container
 ```
-Agora você está dentro do **contêiner LXC**, que oferece um ambiente isolado muito mais completo do que o chroot.
+ Agora você está dentro do **contêiner LXC**, que oferece um ambiente isolado muito mais completo do que o chroot.
+
 ---
 
 ## Docker: Revolucionando a Implantação de Aplicativos
