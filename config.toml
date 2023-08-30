@@ -14,7 +14,7 @@ languageName = "Português Br"
 # Author config
 [author]
   name = "Beta Brandão"
-  email = "roberta@robertabrandao.com.br"
+  email = "robertanrbandao@gmail.com"
   link = ""
 
 # Menu config
@@ -115,7 +115,8 @@ languageName = "Português Br"
       # title shown in home page (HTML format is supported)
       title = ""
       # subtitle shown in home page (HTML format is supported)
-      subtitle = "Honestidade em pequenas coisas não é uma coisa pequena."
+      #subtitle = "Honestidade em pequenas coisas não é uma coisa pequena."
+      subtitle = "Dev-Sec-Ops, atualmente focada em Observabilidade na Gerdau S/A."
       # whether to use typeit animation for subtitle
       typeit = true
       # whether to show social links

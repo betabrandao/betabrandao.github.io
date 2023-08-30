@@ -44,7 +44,7 @@ comment:
   # ...
 
 ---
-A virtualização de recursos é uma parte fundamental da moderna infraestrutura de TI. Nesse contexto, os containers têm desempenhado um papel crucial<!--more-->, oferecendo uma abordagem eficiente para empacotar e executar aplicativos com todas as suas dependências. Neste artigo, exploraremos os fundamentos de containers, Docker e LXC, revelando os conceitos por trás dessa tecnologia em constante evolução.
+A virtualização de recursos é uma parte fundamental da moderna infraestrutura de TI. Nesse contexto, os containers têm desempenhado um papel crucial, oferecendo uma abordagem eficiente para empacotar e executar aplicativos com todas as suas dependências. Neste artigo, exploraremos os fundamentos de containers, Docker e LXC, revelando os conceitos por trás dessa tecnologia em constante evolução. <!--more-->
 
 ## Virtualização de máquina versus Contêinerização
 
@@ -88,7 +88,9 @@ Em última análise, a escolha entre máquinas virtuais e contêineres depende d
 
 Os containers são ambientes isolados que contêm tudo o que um aplicativo precisa para ser executado - código, runtime, bibliotecas e variáveis de ambiente. Eles permitem que os desenvolvedores empacotem uma aplicação junto com todas as suas dependências em um único pacote consistente, independentemente do ambiente em que é executado.
 
+{{< admonition type=tip title="Fique ligado!" open=true >}}
 A ideia por trás dos contêineres não é nova. Os princípios de empacotamento de aplicativos e isolamento de recursos vêm sendo explorados há décadas. O uso de contêineres na computação remonta à década de 1970, quando os sistemas operacionais Unix introduziram o conceito de "chroot", que permite criar um ambiente isolado para executar processos.
+{{< /admonition >}}
 
 ## Principais Benefícios
 - **Eficiência de Recursos:** Containers são mais leves que máquinas virtuais tradicionais, já que compartilham o mesmo kernel do sistema operacional e não precisam replicar todo um sistema operacional.
@@ -110,7 +112,6 @@ sudo mkdir /chroot-ubuntu
 sudo debootstrap --variant=minbase bionic /chroot-ubuntu http://archive.ubuntu.com/ubuntu/
 sudo chroot /chroot-ubuntu
 ```
-
 Aqui, você está criando um ambiente do Ubuntu no diretório `/chroot-ubuntu` e, em seguida, usando o `chroot` para acessá-lo.
 
 No exemplo abaixo, temos o uso do LXC, você pode criar um ambiente isolado mais completo, incluindo sistema de arquivos, rede, etc.
@@ -120,13 +121,11 @@ No exemplo abaixo, temos o uso do LXC, você pode criar um ambiente isolado mais
 ```bash
 sudo apt-get install lxc
 ```
-
 Em seguida, crie um contêiner LXC com um sistema operacional específico, como o Ubuntu:
 
 ```bash
 sudo lxc-create -t download -n meu-container -- --dist ubuntu --release bionic --arch amd64
 ```
-
 Isso criará um contêiner LXC com o Ubuntu 18.04 (Bionic Beaver).
 
 #### Acesse o contêiner LXC:
@@ -135,9 +134,7 @@ Isso criará um contêiner LXC com o Ubuntu 18.04 (Bionic Beaver).
 sudo lxc-start -n meu-container
 sudo lxc-attach -n meu-container
 ```
-
 Agora você está dentro do **contêiner LXC**, que oferece um ambiente isolado muito mais completo do que o chroot.
-
 ---
 
 ## Docker: Revolucionando a Implantação de Aplicativos
