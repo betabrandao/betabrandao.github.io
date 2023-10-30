@@ -3,7 +3,7 @@ title: "Iniciando com Gitflow"
 subtitle: "Boas Práticas de Git Flow, Versionamento de Código e Escrita de Testes"
 date: 2023-08-22T22:09:05-03:00
 lastmod: 2023-08-22T22:09:05-03:00
-draft: true
+draft: false
 author: ""
 authorLink: ""
 description: ""
