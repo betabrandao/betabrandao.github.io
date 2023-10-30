@@ -101,8 +101,7 @@ O versionamento de código é crucial para a rastreabilidade e o gerenciamento d
 ## Commits bem escritos: facilitando a leitura do seu trabalho
 
 Para mensagens de commits, é importante seguir o [Conventional Commits](https://www.conventionalcommits.org/pt-br/v1.0.0/), que é uma convenção simples para utilizar nas mensagens de commit. De acordo com o site, *Ela define um conjunto de regras para criar um histórico de commit explícito, o que facilita a criação de ferramentas automatizadas baseadas na especificação.* Este formato de escrever auxilia na criação de documentações e controles de versão. É um aliado no desenvolvimento e se encaixa com o SemVer e o GitFlow, descrevendo os recursos, correções e modificações que quebram a compatibilidade nas mensagens de commit.
-
-![Conventional Commits](git-conventional-commits.png)
+![Conventional Commits](image1.png)
 Sua estrutura é a seguinte: `<tipo>: <descrição>`, onde:
 
 - **tipo**: pode ser `feat:`, `fix:`, `build:`, `chore:`, `ci:`, `docs:`, `style:`, `refactor:`, `perf:`, `test:`, `BREAKING CHANGE:`. Este prefixo é usado junto com o GitFlow para melhorar a leitura do histórico de commits.
