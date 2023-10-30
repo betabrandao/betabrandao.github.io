@@ -1,8 +1,8 @@
 ---
 title: "Iniciando com Gitflow"
-subtitle: "Boas Práticas de Git Flow, Versionamento de Código e Escrita de Testes"
-date: 2023-08-22T22:09:05-03:00
-lastmod: 2023-08-22T22:09:05-03:00
+subtitle: "Boas Práticas de Git Flow e Versionamento de Código"
+date: 2023-10-30T22:09:05-03:00
+lastmod: 2023-10-30T22:09:05-03:00
 draft: false
 author: ""
 authorLink: ""
@@ -121,5 +121,7 @@ $ git commit -m "docs: Criando a documentação do meu codigo"
 Nas boas práticas de escrita de código, o commit é a parte de sua contribuição que não deve impactar no funcionamento do que já existe implementado. Porém, é boa prática sempre salvar seus commits antes de sair do pc. Neste caso, pode usar o tipo *refactor:* e salvar seu trecho de trabalho. 
 {{< /admonition >}}
 
-Recomendo a leitura no site [conventionalcommits.org](https://www.conventionalcommits.org/pt-br/v1.0.0/).
+Recomendo a leitura no site [conventionalcommits.org](https://www.conventionalcommits.org/pt-br/v1.0.0/) e para testes em TDD, escrevi um artigo também, que pode ser acessado [aqui](/posts/test-driven-develo-nodejs-jest/).
 
+--
+<3
