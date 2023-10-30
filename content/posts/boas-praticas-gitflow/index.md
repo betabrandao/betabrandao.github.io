@@ -123,5 +123,3 @@ Nas boas práticas de escrita de código, o commit é a parte de sua contribuiç
 
 Recomendo a leitura no site [conventionalcommits.org](https://www.conventionalcommits.org/pt-br/v1.0.0/) e para testes em TDD, escrevi um artigo também, que pode ser acessado [aqui](/posts/test-driven-develo-nodejs-jest/).
 
---
-<3
