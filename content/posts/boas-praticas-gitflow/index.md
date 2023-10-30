@@ -1,8 +1,8 @@
 ---
 title: "Iniciando com Gitflow"
 subtitle: "Boas Práticas de Git Flow e Versionamento de Código"
-date: 2023-10-30T22:09:05-03:00
-lastmod: 2023-10-30T22:09:05-03:00
+date: 2023-08-22T22:09:05-03:00
+lastmod: 2023-08-22T22:09:05-03:00
 draft: false
 author: ""
 authorLink: ""
@@ -13,8 +13,8 @@ images: []
 tags: [devops, gitflow, git, nodejs]
 categories: [devops, boas práticas]
 
-featuredImage: "image.jpg"
-featuredImagePreview: "image.jpg"
+featuredImage: "gitflow.jpg"
+featuredImagePreview: "gitflow.jpg"
 
 #hiddenFromHomePage: false
 #hiddenFromSearch: false
