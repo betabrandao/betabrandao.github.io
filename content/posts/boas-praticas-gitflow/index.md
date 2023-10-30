@@ -53,8 +53,6 @@ Apesar de parecer muito verboso para projetos pessoais, lembre-se que seu reposi
 ## Git Flow: Gerenciando o Fluxo de Desenvolvimento
 O Git Flow é um modelo de fluxo de trabalho popular que define uma estrutura robusta para o *desenvolvimento colaborativo* com o Git. Ele estabelece papéis e processos claros para diferentes estágios do ciclo de vida de um projeto. As principais ramificações ou branches incluem:
 
-![Fluxo de Gerenciamento de Branches com o Git](gitflow.jpg)
-
 - **Master** ou **Main**: Esta é a *branch* principal que reflete o estado do projeto em produção. Commits nesta branch são estáveis e bem testados. Não é boa prática executar commits diretamente nesta branch, pois poderá quebrar o fluxo de trabalho de uma entrega ou até subir código não funcional em produção. Geralmente é usado como uma "fotografia" mais atualizada da ultima tag enviada para produção.
 ```bash
 # exemplo
