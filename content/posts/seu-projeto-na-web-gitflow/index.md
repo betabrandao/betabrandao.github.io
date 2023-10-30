@@ -1,8 +1,8 @@
 ---
-title: "{{ replace .TranslationBaseName "-" " " | title }}"
-subtitle: ""
-date: {{ .Date }}
-lastmod: {{ .Date }}
+title: "Seu projeto em produção com Gitflow"
+subtitle: "Como colocar seu projeto em produção"
+date: 2023-10-29T10:06:32-03:00
+lastmod: 2023-10-29T10:06:32-03:00
 draft: true
 author: ""
 authorLink: ""
@@ -46,8 +46,3 @@ comment:
 ---
 
 <!--more-->
-
-<!-- 
-{{< admonition type=tip title="Fique ligado!" open=true >}}
-{{< /admonition >}}
--->
