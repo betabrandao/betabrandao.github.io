@@ -46,6 +46,14 @@ languageName = "Português Br"
     name = "Categories"
     url = "/categories/"
     title = ""
+  [[menu.main]]
+    weight = 4
+    identifier = "fepi"
+    pre = ""
+    post = ""
+    name = "Calculadora Fepi"
+    url = "/posts/calculadora-fepi/"
+    title = ""
 
 # Markup related configuration in Hugo
 [markup]
@@ -119,15 +127,15 @@ languageName = "Português Br"
     # theme change mode ("switch", "select")
     themeChangeMode = "select"
     # DoIt NEW | 0.2.0 Header title config
-    [params.header.title]
+    #[params.header.title]
       # URL of the LOGO
-      #logo = ""
+      # logo = ""
       # title name
-      name = ""
+      # name = "Roberta Brandão"
       # you can add extra information before the name (HTML format is supported), such as icons
-      pre = ""
+      # pre = ""
       # you can add extra information after the name (HTML format is supported), such as icons
-      post = ""
+      #post = ""
       # DoIt NEW | 0.2.5 whether to use typeit animation for title name
       typeit = false
 
@@ -143,10 +151,10 @@ languageName = "Português Br"
       # URL of avatar shown in home page
       avatarURL = "/images/avatar.png"
       # title shown in home page (HTML format is supported)
-      title = ""
+      title = "Roberta Brandão"
       # subtitle shown in home page (HTML format is supported)
-      #subtitle = "Honestidade em pequenas coisas não é uma coisa pequena."
-      subtitle = "Dev-Sec-Ops, atualmente focada em Observabilidade na Gerdau S/A."
+      subtitle = "Honestidade em pequenas coisas não é uma coisa pequena."
+      #subtitle = "Dev-Sec-Ops, atualmente focada em Observabilidade na Gerdau S/A."
       # whether to use typeit animation for subtitle
       typeit = true
       # whether to show social links
