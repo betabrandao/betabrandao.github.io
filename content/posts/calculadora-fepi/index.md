@@ -64,7 +64,7 @@ function calculadora() {
         resultado += "<br>Pontos Faltantes (Pfa) exame final: " + pontos_faltantes.toFixed(2);
         resultado += "<br>Precisaria em N2 " + nota_nececessaria_2bin.toFixed(2) + " pontos para aprovação!";
     } else {
-        var resultado = "Ferias!!"
+        var resultado = "Ferias!! Sua média final (Mf) é:" + media.toFixed(2);
     }
 
     document.getElementById("resultado").innerHTML = resultado;
