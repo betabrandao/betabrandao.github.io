@@ -61,7 +61,7 @@ function calculadora() {
     if (media < 70) {
         var pontos_faltantes = (250 - (3 * media) ) / 2;
         var resultado = "Media Final (Mf): " + media.toFixed(2); 
-        resultado += "<br>Pontos Faltantes (Pfa) : " + pontos_faltantes.toFixed(2);
+        resultado += "<br>Pontos Faltantes (Pfa) exame final: " + pontos_faltantes.toFixed(2);
         resultado += "<br>Precisaria em N2 " + nota_nececessaria_2bin.toFixed(2) + " pontos para aprovação!";
     } else {
         var resultado = "Ferias!!"
