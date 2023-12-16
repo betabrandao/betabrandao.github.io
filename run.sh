@@ -12,7 +12,7 @@ case $selection in
 	;;
 
 	serve | s)
-	   hugo --config config.toml serve -D --port 8080 --bind ${arg}
+	   hugo --config config.toml serve -D --port 3030 --bind ${arg}
 	;;
 	*)
 	   echo "Usage:"
