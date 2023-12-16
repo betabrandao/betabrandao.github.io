@@ -1,6 +1,14 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "Roberta Brandao Blog",
+    "short_name": "RB App",
+    "start_url": "/",
+    "shortcuts": [
+      {
+        "name": "Calculadora Fepi",
+        "url": "/calculadora-fepi",
+        "description": "Calculadora de Notas"
+      }
+    ],
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -11,9 +19,16 @@
             "src": "/android-chrome-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
+        },
+        {
+            "src": "/apple-touch-icon.png",
+            "sizes": "180x180",
+            "type": "image/png",
+            "purpose": "any maskable"
         }
     ],
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
-    "display": "standalone"
+    "display": "standalone",
+    "orientation": "portrait"
 }

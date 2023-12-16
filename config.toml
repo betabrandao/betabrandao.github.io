@@ -52,7 +52,7 @@ languageName = "Português Br"
     pre = ""
     post = ""
     name = "Calculadora Fepi"
-    url = "/posts/calculadora-fepi/"
+    url = "/calculadora-fepi/"
     title = ""
 
 # Markup related configuration in Hugo
