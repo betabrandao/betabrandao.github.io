@@ -1,7 +1,7 @@
 baseURL = "https://robertabrandao.com.br/"
 
 # Change the default theme to be use when building the site with Hugo
-theme = "LoveIt"
+theme = "DoIt"
 
 # website title
 title = "Roberta Brandão"
@@ -46,6 +46,14 @@ languageName = "Português Br"
     name = "Categories"
     url = "/categories/"
     title = ""
+  [[menu.main]]
+    weight = 4
+    identifier = "fepi"
+    pre = ""
+    post = ""
+    name = "Calculadora Fepi"
+    url = "/posts/calculadora-fepi/"
+    title = ""
 
 # Markup related configuration in Hugo
 [markup]
@@ -76,22 +84,30 @@ languageName = "Português Br"
     endLevel = 6
 
 [params]
-  # site default theme ["auto", "light", "dark"]
+  # DoIt theme version
+  version = "0.4.X"
   defaultTheme = "auto"
-  # public git repo url only then enableGitInfo is true
   gitRepo = ""
-  # LoveIt NEW | 0.1.1 which hash function used for SRI, when empty, no SRI is used
-  # ["sha256", "sha384", "sha512", "md5"]
-  fingerprint = ""
-  # LoveIt NEW | 0.2.0 date format
   dateFormat = "2006-01-02"
-  # website title for Open Graph and Twitter Cards
   title = "Beta Brandão"
+  enablePWA = true
+  cacheRemoteImages = false
   # website description for RSS, SEO, Open Graph and Twitter Cards
   description = "Honestidade em pequenas coisas não é uma coisa pequena"
   # website images for Open Graph and Twitter Cards
   #images = ["/logo.png"]
- 
+
+[params.app]
+    # optional site title override for the app when added to an iOS home screen or Android launcher
+    title = "RB"
+    # whether to omit favicon resource links
+    noFavicon = false
+    # modern SVG favicon to use in place of older style .png and .ico files
+    svgFavicon = ""
+    # Safari mask icon color
+    iconColor = "#5bbad5"
+    # Windows v8-10 tile color
+    tileColor = "#da532c" 
 # List (category or tag) page config
   [params.list]
     # special amount of posts in each list page
@@ -100,6 +116,28 @@ languageName = "Português Br"
     dateFormat = "01-02"
     # amount of RSS pages
     rss = 10
+
+# Header config
+  [params.header]
+    # desktop header mode ("fixed", "normal", "auto")
+    desktopMode = "fixed"
+    # mobile header mode ("fixed", "normal", "auto")
+    mobileMode = "auto"
+    # DoIt NEW | 0.2.11 Theme change mode
+    # theme change mode ("switch", "select")
+    themeChangeMode = "select"
+    # DoIt NEW | 0.2.0 Header title config
+    #[params.header.title]
+      # URL of the LOGO
+      # logo = ""
+      # title name
+      # name = "Roberta Brandão"
+      # you can add extra information before the name (HTML format is supported), such as icons
+      # pre = ""
+      # you can add extra information after the name (HTML format is supported), such as icons
+      #post = ""
+      # DoIt NEW | 0.2.5 whether to use typeit animation for title name
+      typeit = false
 
   # Home page config
   [params.home]
@@ -113,10 +151,10 @@ languageName = "Português Br"
       # URL of avatar shown in home page
       avatarURL = "/images/avatar.png"
       # title shown in home page (HTML format is supported)
-      title = ""
+      title = "Roberta Brandão"
       # subtitle shown in home page (HTML format is supported)
-      #subtitle = "Honestidade em pequenas coisas não é uma coisa pequena."
-      subtitle = "Dev-Sec-Ops, atualmente focada em Observabilidade na Gerdau S/A."
+      subtitle = "Honestidade em pequenas coisas não é uma coisa pequena."
+      #subtitle = "Dev-Sec-Ops, atualmente focada em Observabilidade na Gerdau S/A."
       # whether to use typeit animation for subtitle
       typeit = true
       # whether to show social links
@@ -133,7 +171,6 @@ languageName = "Português Br"
   [params.social]
     GitHub = "betabrandao"
     Linkedin = "betabrandao"
-    Instagram = "betanaroca"
     Gitlab = "betabrandao"
   [params.page.comment.gitalk]
     enable = true
@@ -141,3 +178,39 @@ languageName = "Português Br"
     repo = "betabrandao.github.io"
     clientId = "d6eea39f33fc749ce033"
     clientSecret = "2f3c3e3a135b7ffa35ce0ab4566d52b19a943b0e"
+  [params.math]
+    enable = true
+
+ [params.search]
+    enable = true
+    # type of search engine ("algolia", "fuse")
+    type = "fuse"
+    # max index length of the chunked content
+    contentLength = 4000
+    # placeholder of the search bar
+    placeholder = ""
+    # DoIt NEW | 0.2.1 max number of results length
+    maxResultLength = 10
+    # DoIt NEW | 0.2.3 snippet length of the result
+    snippetLength = 30
+    # DoIt NEW | 0.2.1 HTML tag name of the highlight part in results
+    highlightTag = "em"
+    # DoIt NEW | 0.2.4 whether to use the absolute URL based on the baseURL in search index
+    absoluteURL = false
+    [params.search.algolia]
+      index = ""
+      appID = ""
+      searchKey = ""
+    [params.search.fuse]
+      # DoIt NEW | 0.2.12 https://fusejs.io/api/options.html
+      isCaseSensitive = false
+      minMatchCharLength = 2
+      findAllMatches = false
+      location = 0
+      threshold = 0.3
+      distance = 100
+      ignoreLocation = false
+      useExtendedSearch = false
+      ignoreFieldNorm = false
+
+
