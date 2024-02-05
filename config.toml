@@ -90,7 +90,7 @@ languageName = "Português Br"
   gitRepo = ""
   dateFormat = "2006-01-02"
   title = "Beta Brandão"
-  enablePWA = true
+  enablePWA = false
   cacheRemoteImages = false
   # website description for RSS, SEO, Open Graph and Twitter Cards
   description = "Honestidade em pequenas coisas não é uma coisa pequena"
