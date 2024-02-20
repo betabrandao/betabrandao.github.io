@@ -4,7 +4,7 @@ baseURL = "https://robertabrandao.com.br/"
 theme = "DoIt"
 
 # website title
-title = "Roberta Brandão"
+title = "Beta Brandão"
 
 # language code ["en", "zh-CN", "fr", "pl", ...]
 languageCode = "pt"
@@ -137,7 +137,7 @@ languageName = "Português Br"
       # you can add extra information after the name (HTML format is supported), such as icons
       #post = ""
       # DoIt NEW | 0.2.5 whether to use typeit animation for title name
-      typeit = false
+      typeit = true
 
   # Home page config
   [params.home]
@@ -184,7 +184,7 @@ languageName = "Português Br"
  [params.search]
     enable = true
     # type of search engine ("algolia", "fuse")
-    type = "fuse"
+    type = "algolia"
     # max index length of the chunked content
     contentLength = 4000
     # placeholder of the search bar
@@ -198,9 +198,9 @@ languageName = "Português Br"
     # DoIt NEW | 0.2.4 whether to use the absolute URL based on the baseURL in search index
     absoluteURL = false
     [params.search.algolia]
-      index = ""
-      appID = ""
-      searchKey = ""
+      index = "search"
+      appID = "BM9MMBCO5G"
+      searchKey = "5620b39c163d2c3eb74ac67d68fe53b6"
     [params.search.fuse]
       # DoIt NEW | 0.2.12 https://fusejs.io/api/options.html
       isCaseSensitive = false
