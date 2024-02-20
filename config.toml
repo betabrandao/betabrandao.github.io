@@ -11,6 +11,9 @@ languageCode = "pt"
 # language name ["English", "简体中文", "Français", "Polski", ...]
 languageName = "Português Br"
 
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
 # Author config
 [author]
   name = "Beta Brandão"
