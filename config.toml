@@ -4,7 +4,7 @@ baseURL = "https://robertabrandao.com.br/"
 theme = "DoIt"
 
 # website title
-title = "Beta Brandão"
+title = "Roberta Brandão"
 
 # language code ["en", "zh-CN", "fr", "pl", ...]
 languageCode = "pt"
@@ -16,8 +16,8 @@ languageName = "Português Br"
 
 # Author config
 [author]
-  name = "Beta Brandão"
-  email = "robertanrbandao@gmail.com"
+  name = "Roberta Brandão"
+  email = "robertanrbandao[at]gmail[dot]com"
   link = ""
 
 # Menu config
@@ -92,7 +92,7 @@ languageName = "Português Br"
   defaultTheme = "auto"
   gitRepo = ""
   dateFormat = "2006-01-02"
-  title = "Beta Brandão"
+  title = "Roberta Brandão"
   enablePWA = false
   cacheRemoteImages = false
   # website description for RSS, SEO, Open Graph and Twitter Cards
