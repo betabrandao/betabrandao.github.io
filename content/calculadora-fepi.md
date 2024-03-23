@@ -100,8 +100,5 @@ Nota do segundo bimestre (N2):
 <input type="text" value="70" id="bin2" onKeyUp="calculadora();" style="border: 1px solid gray;padding: 5px!important;"/>
 
 <input type="button" onClick="calculadora();" value="Calcular!" style="border: 1px solid gray;padding: 5px!important;border-radius: 5px"/>
- 
-{{< admonition type=tip title="Fique ligado na nota!" open=true >}}
-<did id="resultado"></div>
-{{< /admonition >}}
 
+> <did id="resultado"></div>
