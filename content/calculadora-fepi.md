@@ -1,5 +1,5 @@
 ---
-title: "Calculadora Fepi"
+title: "Calculadora de Notas"
 subtitle: ""
 date: 2023-12-15T18:57:50-03:00
 lastmod: 2023-12-15T18:57:50-03:00
@@ -45,7 +45,7 @@ comment:
 
 ---
 
-Calculadora Fepi<!--more-->
+Calculadora de Notas Fepi<!--more-->
 
 {{< script >}}
 //script simples para calcular media da fepi
@@ -101,4 +101,4 @@ Nota do segundo bimestre (N2):
 
 <input type="button" onClick="calculadora();" value="Calcular!" style="border: 1px solid gray;padding: 5px!important;border-radius: 5px"/>
 
-> <did id="resultado"></div>
+> <did id="resultado">Resultado...</div>
