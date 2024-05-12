@@ -59,7 +59,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: gh-pages
+          name: github-pages
           path: ./public
 
   # Deployment job
