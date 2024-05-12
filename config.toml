@@ -29,28 +29,44 @@ languageName = "Português Br"
     pre = ""
     # you can add extra information after the name (HTML format is supported), such as icons
     post = ""
-    name = "Posts"
+    name = "Publicações"
     url = "/posts/"
     # title will be shown when you hover on this menu link
     title = ""
   [[menu.main]]
     weight = 2
-    identifier = "tags"
+    identifier = "devops"
     pre = ""
     post = ""
-    name = "Tags"
-    url = "/tags/"
+    name = "DevOps"
+    url = "/categories/devops/"
     title = ""
   [[menu.main]]
     weight = 3
-    identifier = "categories"
+    identifier = "bestpratices"
     pre = ""
     post = ""
-    name = "Categories"
-    url = "/categories/"
+    name = "Boas Práticas"
+    url = "/categories/boas-praticas/"
     title = ""
   [[menu.main]]
     weight = 4
+    identifier = "developing"
+    pre = ""
+    post = ""
+    name = "Desenvolvimento"
+    url = "/categories/desenvolvimento/"
+    title = ""
+  [[menu.main]]
+    weight = 5
+    identifier = "showcase"
+    pre = ""
+    post = ""
+    name = "Apresentações"
+    url = "/showcase/"
+    title = ""
+  [[menu.main]]
+    weight = 9
     identifier = "fepi"
     pre = ""
     post = ""
@@ -187,7 +203,7 @@ languageName = "Português Br"
  [params.search]
     enable = true
     # type of search engine ("algolia", "fuse")
-    type = "algolia"
+    type = "fuse"
     # max index length of the chunked content
     contentLength = 4000
     # placeholder of the search bar
@@ -201,9 +217,9 @@ languageName = "Português Br"
     # DoIt NEW | 0.2.4 whether to use the absolute URL based on the baseURL in search index
     absoluteURL = false
     [params.search.algolia]
-      index = "search"
-      appID = "BM9MMBCO5G"
-      searchKey = "5620b39c163d2c3eb74ac67d68fe53b6"
+      index = ""
+      appID = ""
+      searchKey = ""
     [params.search.fuse]
       # DoIt NEW | 0.2.12 https://fusejs.io/api/options.html
       isCaseSensitive = false
