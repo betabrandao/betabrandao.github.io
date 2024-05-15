@@ -27,5 +27,11 @@ math:
 comment:
   enable: true
 ---
-çslkjdçlgkaçlgklgk
-<!--more-->
+Enriquecer a informação do seu log pode nascer na arquitetura do seu software,<!--more--> e aplicar esta metodologia no início do projeto requer um pouco mais de disciplina. E esta definição é importante inclusive na escolha da biblioteca de geração de logs do seu projeto.
+
+Por exemplo, em um trecho de código desenvolvido em NodeJS (javascript ou typescript), foi usado o método `console.log()`:
+
+```javascript
+console.log("Ocorreu um erro imprevisto")
+```
+O método `console.log()` deve-se ser desencorajado em aplicações que necessitam controles que envolvam uma categorização entre uma mensagem de erro ou de informação, pois este método imprime uma mensagem
