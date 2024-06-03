@@ -6,6 +6,14 @@ draft: false
 
 {{< 
     showcase 
+    title="Mentoria Devops" 
+    summary="Neste Video explico sobre como o KanBan pode ajudar a organizar seus estudos." 
+    image="./mentoria.png" 
+    link="https://www.youtube.com/watch?v=jt6dD7RH8x4" 
+>}}
+
+{{< 
+    showcase 
     title="O que é DevOps?" 
     summary="Neste Video explico como é a carreira de DevOps e por onde se inicia os estudos.." 
     image="./devops.png" 
