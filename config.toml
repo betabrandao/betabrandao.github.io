@@ -43,14 +43,6 @@ languageName = "Português Br"
     title = ""
   [[menu.main]]
     weight = 3
-    identifier = "bestpratices"
-    pre = ""
-    post = ""
-    name = "Boas Práticas"
-    url = "/categories/boas-praticas/"
-    title = ""
-  [[menu.main]]
-    weight = 4
     identifier = "developing"
     pre = ""
     post = ""
@@ -58,12 +50,20 @@ languageName = "Português Br"
     url = "/categories/desenvolvimento/"
     title = ""
   [[menu.main]]
-    weight = 5
+    weight = 4
     identifier = "showcase"
     pre = ""
     post = ""
     name = "Apresentações"
     url = "/showcase/"
+    title = ""
+  [[menu.main]]
+    weight = 5
+    identifier = "clocktime"
+    pre = ""
+    post = ""
+    name = "Timer"
+    url = "/timer/"
     title = ""
   [[menu.main]]
     weight = 9
