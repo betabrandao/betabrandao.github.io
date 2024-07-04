@@ -1,0 +1,48 @@
+input[type=text] {
+  border: 1px solid gray;
+  padding: 5px !important;
+}
+
+input[type=button] {
+border: 1px solid gray;
+padding: 5px !important;
+border-radius: 5px;
+}
+
+
+.net-label {
+  font-size: 60%;
+}
+
+.net-calc {
+  font-size: 80%;
+  border-collapse: collapse; 
+}
+
+.net-calc td, .net-calc th {
+ border: 1px solid black;
+}
+
+.net-calc thead {
+  font-weight: bold;
+  background-color: #eeeeee;
+}
+
+.net-disabledAction {
+ color: #dddddd;
+}
+
+.net-maskSpan {
+  background-color: #cccccc;
+  text-align: right;
+}
+.net-maskSpanJoinable {
+  background-color: #cccccc;
+  text-align: right;
+ cursor: pointer;
+}
+
+.net-maskSpanRotate {
+ filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+ background-color:green;
+}

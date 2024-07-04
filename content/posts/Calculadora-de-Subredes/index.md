@@ -1,8 +1,8 @@
 ---
-title: "{{ replace .TranslationBaseName "-" " " | title }}"
+title: "Calculadora De Subredes"
 subtitle: ""
-date: {{ .Date }}
-lastmod: {{ .Date }}
+date: 2024-07-04T00:27:39-03:00
+lastmod: 2024-07-04T00:27:39-03:00
 draft: true
 authors: []
 description: ""
