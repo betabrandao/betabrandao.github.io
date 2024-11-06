@@ -56,6 +56,7 @@ if (getCookie("matricula") == "") {
     barcode(123456);
 } else {
     barcode(getCookie("matricula"));
+    document.getElementById("matricula").value = getCookie("matricula");
 }
 
 function barcode(value) {
