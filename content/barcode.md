@@ -49,7 +49,7 @@ Codigo de Barras
 <!--more-->
 <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.0/dist/JsBarcode.all.min.js"></script>
 
-{{< script >}}
+< script >
 //script simples para mostrar codigo de barras
 
 if (getCookie("matricula") == "") {
@@ -85,7 +85,7 @@ function getCookie(cname) {
   }
   return "";
 }
-{{< /script >}}
+< /script >
 
 -------------------------------------
 
