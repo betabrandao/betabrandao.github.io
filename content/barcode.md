@@ -53,7 +53,7 @@ Codigo de Barras
 //script simples para mostrar codigo de barras
 
 if (getCookie("matricula") == "") {
-    barcode(123456);
+    barcode(023456);
 } else {
     barcode(getCookie("matricula"));
     document.getElementById("matricula").value = getCookie("matricula");
@@ -90,7 +90,7 @@ function getCookie(cname) {
 -------------------------------------
 
 ### Coloque sua Matricula com 6 digitos
-<center><input type="text" value="00000" id="matricula" onKeyUp="barcode(this.value);" style="border: 1px solid gray;padding: 5px!important;"/>
+<center><input type="text" value="023456" id="matricula" onKeyUp="barcode(this.value);" style="border: 1px solid gray;padding: 5px!important;"/>
 <hr>
 
 <img id="barcode" width="80%"/></center>
