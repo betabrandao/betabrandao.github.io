@@ -3,4 +3,5 @@
 	url = https://github.com/dillonzq/LoveIt.git
 [submodule "themes/DoIt"]
 	path = themes/DoIt
-	url = https://github.com/HEIGE-PCloud/DoIt.git
+  url = https://github.com/HEIGE-PCloud/DoIt.git
+  branch = v0.4.0
