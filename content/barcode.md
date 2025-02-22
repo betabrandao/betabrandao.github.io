@@ -50,6 +50,7 @@ Codigo de Barras
 <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.0/dist/JsBarcode.all.min.js"></script>
 
 {{< script >}}
+"use strict";
 //script simples para mostrar codigo de barras
 
 if (getCookie("matricula") == "") {
