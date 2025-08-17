@@ -1,4 +1,4 @@
-baseURL = "https://robertabrandao.com.br/"
+baseURL = "https://blog.robertabrandao.com.br/"
 
 # Change the default theme to be use when building the site with Hugo
 theme = "DoIt"
