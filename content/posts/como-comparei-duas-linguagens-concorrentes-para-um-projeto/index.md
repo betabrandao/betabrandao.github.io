@@ -40,20 +40,18 @@ Comecei me baseando cenários de curto, médio e longo prazo, especialmente nos 
 
   * **Goroutines** compartilham o mesmo heap de memória. Isso significa que duas **goroutines** podem acessar e modificar os mesmos dados simultaneamente e; você precisa proteger acesso concorrente com **mutexes** , **locks** ou **channels** cuidadosamente sincronizados:
 
-
-    
-    
+```golang
     var x int
     
     go func() { x = 1 }()
     go func() { x = 2 }()
     // condição de corrida: quem escreverá último?
+```
 
   * Channels ajudam na comunicação entre **goroutines** , mas não impedem que elas compartilhem referências a objetos mutáveis. Mesmo com o uso de canal, o acesso à função não é isolado. Dois processos podem alterar o mesmo objeto ao mesmo tempo.
-
-
     
     
+```golang
     type Conta struct { saldo int }
     
     conta := &Conta{saldo: 100}
@@ -71,6 +69,7 @@ Comecei me baseando cenários de curto, médio e longo prazo, especialmente nos 
         c.saldo -= 30
     }()
     
+```
 
   * Go depende de disciplina, e isso é crítico demais a longo prazo. Como falei antes, a memória é compartilhada por padrão e cabe ao desenvolvedor garantir segurança de concorrência com mutexes, RWLocks, atomic. Elevar esta responsabilidade para o humano seria um risco.
   * **Race Conditions** detecta, mas não previne.
@@ -84,6 +83,7 @@ Vamos supor que queremos debitar valores de uma conta **simultaneamente**. Supon
 ### Em Go: Risco de condição de corrida
     
     
+```golang
     package main
     
     import (
@@ -114,19 +114,22 @@ Vamos supor que queremos debitar valores de uma conta **simultaneamente**. Supon
         time.Sleep(500 * time.Millisecond)
     }
     
+```
 
 ### Resultado possível:
     
     
+```pre
     Debitado R$70, saldo atual: R$30
     Debitado R$50, saldo atual: R$-20  ← ERRO!
-    
+```
 
 Ambas as goroutines **verificaram o saldo antes de debitar** , mas **modificaram a mesma memória** — isso causa uma **race condition** , pois o acesso à `conta.Saldo` não é sincronizado.
 
 ### Em Elixir: Concorrência segura com processos isolados
     
     
+```elixir
     defmodule Conta do
       def start_link(saldo_inicial) do
         spawn_link(fn -> loop(saldo_inicial) end)
@@ -160,14 +163,16 @@ Ambas as goroutines **verificaram o saldo antes de debitar** , mas **modificaram
       send(pid, {:debitar, 50, self()})
       receive do r -> IO.inspect(r, label: "Transação 2") end
     end)
-    
+```
 
 ### 🧾 Resultado (coerente):
     
     
+```pre
     Transação 1: {:ok, 30}
     Transação 2: {:erro, :saldo_insuficiente}
     
+```
 
 #### Por quê funciona?
 
