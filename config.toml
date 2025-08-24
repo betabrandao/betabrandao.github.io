@@ -1,4 +1,4 @@
-baseURL = "https://blog.robertabrandao.com.br/"
+baseURL = "https://betabrandao.github.io/"
 
 # Change the default theme to be use when building the site with Hugo
 theme = "DoIt"
@@ -39,7 +39,7 @@ languageName = "Português Br"
     pre = ""
     post = ""
     name = "DevOps"
-    url = "/categories/devops/"
+    url = "/tags/devops/"
     title = ""
   [[menu.main]]
     weight = 3
@@ -47,7 +47,7 @@ languageName = "Português Br"
     pre = ""
     post = ""
     name = "Desenvolvimento"
-    url = "/categories/desenvolvimento/"
+    url = "/tags/desenvolvimento/"
     title = ""
   [[menu.main]]
     weight = 4
@@ -71,7 +71,7 @@ languageName = "Português Br"
     pre = ""
     post = ""
     name = "Calculadora Fepi"
-    url = "/calculadora-fepi/"
+    url = "/post/calculadora-fepi/"
     title = ""
 
 # Markup related configuration in Hugo
