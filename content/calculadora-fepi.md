@@ -51,8 +51,8 @@ Calculadora de Notas Fepi<!--more-->
 //script simples para calcular media da fepi
 function calculadora() {
     // variaveis recebem valores dos elementos html
-    var nota1 = document.getElementById("bin1").value;
-    var nota2 = document.getElementById("bin2").value;
+    var nota1 = document.getElementById("bin1").value.replace(/,/g, ".");
+    var nota2 = document.getElementById("bin2").value.replace(/,/g, ".");
 
     // calculos baseados no excel fornecido pela FEPI
     var media = ((nota2 * 3) + (nota1 * 2)) / 5;
